@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Відкрийте Карпати відповідально: еко-маршрути, перевірені локальні гіди та прозора ціна. Сплануйте подорож із платформою «До Вершин».">
+  <meta name="theme-color" content="#F7F5EF">
+  <meta property="og:title" content="До Вершин — еко-мандрівки Карпатами">
+  <meta property="og:description" content="Справжні гори, перевірені гіди та подорожі без прихованих умов.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="uk_UA">
+  <title>До Вершин — еко-мандрівки Карпатами</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Raleway:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#F7F5EF] font-['Inter',system-ui,sans-serif] text-[#202A24] antialiased leading-[1.65]">
+  <header class="sticky top-0 z-50 border-b border-[#D4D9D1] bg-[#F7F5EF]/95 backdrop-blur">
+    <div class="mx-auto flex max-w-[70rem] flex-wrap items-center justify-between gap-x-8 px-4 py-2 sm:px-8 lg:grid lg:grid-cols-3 lg:px-12">
+      <a href="#top" class="inline-flex min-h-11 w-fit items-center rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#43634E] lg:col-start-1 lg:row-start-1" aria-label="До Вершин — на головну">
+        <img src="assets/images/logo.svg" alt="До Вершин" width="160" height="48" class="h-12 w-auto sm:h-14">
+      </a>
+      <button id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Відкрити меню" class="inline-flex h-11 w-11 items-center justify-center rounded text-[#202A24] transition hover:bg-[#EEEAE0] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#43634E] lg:hidden">
+        <svg id="menu-open-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="h-6 w-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16" />
+        </svg>
+        <svg id="menu-close-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="hidden h-6 w-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m6 6 12 12M18 6 6 18" />
+        </svg>
+      </button>
+      <div id="mobile-menu" class="hidden w-full basis-full flex-col gap-3 border-t border-[#D4D9D1] pb-2 pt-3 lg:col-start-2 lg:row-start-1 lg:flex lg:w-auto lg:basis-auto lg:items-center lg:justify-self-center lg:border-0 lg:p-0">
+        <nav aria-label="Основна навігація">
+          <ul class="flex flex-col gap-1 text-[0.95rem] font-medium text-[#606A63] lg:flex-row lg:items-center lg:gap-x-7">
+            <li><a href="#benefits" class="inline-flex min-h-11 w-full items-center rounded px-2 transition duration-[160ms] ease-[ease] hover:text-[#43634E] hover:underline hover:underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#43634E] lg:min-h-10 lg:w-auto lg:px-0">Переваги</a></li>
+            <li><a href="#services" class="inline-flex min-h-11 w-full items-center rounded px-2 transition duration-[160ms] ease-[ease] hover:text-[#43634E] hover:underline hover:underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#43634E] lg:min-h-10 lg:w-auto lg:px-0">Послуги</a></li>
+            <li><a href="#reviews" class="inline-flex min-h-11 w-full items-center rounded px-2 transition duration-[160ms] ease-[ease] hover:text-[#43634E] hover:underline hover:underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#43634E] lg:min-h-10 lg:w-auto lg:px-0">Відгуки</a></li>
+            <li><a href="#contacts" class="inline-flex min-h-11 w-full items-center rounded px-2 transition duration-[160ms] ease-[ease] hover:text-[#43634E] hover:underline hover:underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#43634E] lg:min-h-10 lg:w-auto lg:px-0">Контакти</a></li>
+          </ul>
+        </nav>
+        <a href="#request" class="inline-flex min-h-[2.625rem] w-fit items-center justify-center rounded border border-[#43634E] bg-[#43634E] px-3 text-[0.9rem] font-bold text-white transition duration-[160ms] ease-[ease] hover:border-[#304A39] hover:bg-[#304A39] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#43634E] lg:hidden">
+          Розрахувати тур <span aria-hidden="true" class="ml-2">↗</span>
+        </a>
+      </div>
+      <a href="#request" class="hidden min-h-[2.625rem] items-center justify-center rounded border border-[#43634E] bg-[#43634E] px-3 text-[0.9rem] font-bold text-white transition duration-[160ms] ease-[ease] hover:border-[#304A39] hover:bg-[#304A39] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#43634E] lg:col-start-3 lg:row-start-1 lg:inline-flex lg:justify-self-end">
+        Розрахувати тур <span aria-hidden="true" class="ml-2">↗</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section aria-labelledby="hero-title" class="mx-auto grid max-w-[70rem] grid-cols-1 items-center gap-12 px-4 py-16 sm:px-8 sm:py-14 lg:grid-cols-[0.9fr_1.1fr] lg:gap-12 lg:px-12 lg:py-16">
+      <div class="relative z-10 lg:py-6">
+        <p class="mb-5 inline-flex items-center gap-2 rounded-full border border-[#D4D9D1] bg-white/70 px-4 py-2 text-[0.78rem] font-extrabold uppercase tracking-[0.12em] text-[#43634E]">
+          <span aria-hidden="true" class="h-2 w-2 rounded-full bg-[#43634E]"></span>
+          Еко-мандрівки Карпатами
+        </p>
+        <h1 id="hero-title" class="max-w-2xl font-['Raleway',sans-serif] text-[clamp(2.25rem,4vw,3.75rem)] font-semibold leading-[1.2] tracking-[-0.045em]">
+          Чесні еко-подорожі Карпатами без прихованих умов
+        </h1>
+        <p class="mt-6 max-w-xl text-[1.08rem] leading-[1.65] text-[#606A63]">
+          Маршрут і локальний гід саме для вас — із прозорою ціною та підтримкою на кожному етапі подорожі.
+        </p>
+        <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+          <a href="#request" class="inline-flex min-h-12 items-center justify-center rounded border border-[#43634E] bg-[#43634E] px-[1.375rem] font-bold text-white transition duration-[160ms] ease-[ease] hover:border-[#304A39] hover:bg-[#304A39] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#43634E]">
+            Розрахувати тур <span aria-hidden="true" class="ml-2">↗</span>
+          </a>
+          <a href="#benefits" class="inline-flex min-h-12 items-center justify-center rounded border border-[#D4D9D1] bg-white/70 px-[1.375rem] font-bold text-[#202A24] transition duration-[160ms] ease-[ease] hover:border-[#43634E] hover:bg-[#EEEAE0] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#43634E]">
+            Чому ми
+          </a>
+        </div>
+        <ul aria-label="Досягнення платформи" class="mt-10 grid max-w-lg grid-cols-3 gap-3 border-t border-[#D4D9D1] pt-6 sm:gap-6">
+          <li><strong class="block font-['Raleway',sans-serif] text-[1.25rem] font-bold">25+</strong><span class="text-[0.78rem] leading-[1.65] text-[#606A63]">маршрутів</span></li>
+          <li><strong class="block font-['Raleway',sans-serif] text-[1.25rem] font-bold">18</strong><span class="text-[0.78rem] leading-[1.65] text-[#606A63]">локальних гідів</span></li>
+          <li><strong class="block font-['Raleway',sans-serif] text-[1.25rem] font-bold">4.9/5</strong><span class="text-[0.78rem] leading-[1.65] text-[#606A63]">оцінка гостей</span></li>
+        </ul>
+      </div>
+      <div class="lg:justify-self-end">
+        <video autoplay muted loop playsinline aria-hidden="true" poster="assets/images/hero-image.jpg" class="aspect-[4/3] w-full rounded-xl object-cover shadow-[0_0.25rem_1rem_rgb(32_42_36_/_6%)] sm:aspect-[5/4] lg:max-w-xl">
+          <source src="assets/video/hero_video.mp4" type="video/mp4">
+        </video>
+      </div>
+    </section>
+
+    <section class="video-section" aria-labelledby="video-title">
+      <div class="video-container">
+        <h2 id="video-title">Відчуйте Карпати до мандрівки</h2>
+        <figure class="video-frame">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/i_floFq4Ekk?rel=0"
+            title="Відео про Карпати від «До Вершин»"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </figure>
+      </div>
+    </section>
+
+    <section id="benefits" aria-labelledby="benefits-title" class="scroll-mt-24 border-y border-[#D4D9D1] bg-[#EEEAE0]">
+      <div class="mx-auto max-w-[70rem] px-4 py-16 sm:px-8 sm:py-16 lg:px-12 lg:py-[5.5rem]">
+        <div class="mx-auto mb-[2.375rem] max-w-2xl text-center">
+          <p class="mb-3 text-[0.78rem] font-extrabold uppercase tracking-[0.12em] text-[#43634E]">Наші переваги</p>
+          <h2 id="benefits-title" class="font-['Raleway',sans-serif] text-[clamp(1.8rem,3.2vw,2.8rem)] font-semibold leading-[1.2] tracking-[-0.045em]">Подорож, що залишає після себе лише спогади</h2>
+          <p class="mt-4 leading-[1.65] text-[#606A63]">Плануйте відпочинок з увагою до безпеки, довкілля та вашого бюджету.</p>
+        </div>
+        <ul class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <li class="rounded-lg border border-[#D4D9D1] bg-white p-[1.625rem] shadow-[0_0.25rem_1rem_rgb(32_42_36_/_6%)] transition duration-[240ms] ease-[ease] hover:-translate-y-[2px] hover:shadow-[0_0.5rem_1.5rem_rgb(32_42_36_/_12%)]">
+            <img src="assets/icons/icon%201.svg" alt="" aria-hidden="true" class="advantages-icon">
+            <h3 class="font-['Raleway',sans-serif] text-[1.25rem] font-semibold leading-[1.2]">Локальні перевірені гіди</h3>
+            <p class="mt-2 leading-[1.65] text-[#606A63]">Наші гіди мають багато досвіду в різноманітних видах туризму, зокрема в Карпатах</p>
+          </li>
+          <li class="rounded-lg border border-[#D4D9D1] bg-white p-[1.625rem] shadow-[0_0.25rem_1rem_rgb(32_42_36_/_6%)] transition duration-[240ms] ease-[ease] hover:-translate-y-[2px] hover:shadow-[0_0.5rem_1.5rem_rgb(32_42_36_/_12%)]">
+            <img src="assets/icons/icon%202.svg" alt="" aria-hidden="true" class="advantages-icon">
+            <h3 class="font-['Raleway',sans-serif] text-[1.25rem] font-semibold leading-[1.2]">Прозорий розрахунок ціни</h3>
+            <p class="mt-2 leading-[1.65] text-[#606A63]">Будьте впевнені в прозорості цін використовуючи наш інтерактивний калькулятор цін</p>
+          </li>
+          <li class="rounded-lg border border-[#D4D9D1] bg-white p-[1.625rem] shadow-[0_0.25rem_1rem_rgb(32_42_36_/_6%)] transition duration-[240ms] ease-[ease] hover:-translate-y-[2px] hover:shadow-[0_0.5rem_1.5rem_rgb(32_42_36_/_12%)]">
+            <img src="assets/icons/icon%203.svg" alt="" aria-hidden="true" class="advantages-icon">
+            <h3 class="font-['Raleway',sans-serif] text-[1.25rem] font-semibold leading-[1.2]">Безпека та зв’язок</h3>
+            <p class="mt-2 leading-[1.65] text-[#606A63]">Наш сайт має високі стандарти безпеки для клієнтів, а саме в них входить доступ до постійного зв’язку Starlink/Gps</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section aria-labelledby="steps-title" class="mx-auto max-w-[70rem] px-4 py-16 sm:px-8 sm:py-14 lg:px-12 lg:py-[5.5rem]">
+      <div class="mx-auto mb-[2.375rem] max-w-2xl text-center">
+        <p class="mb-3 text-[0.78rem] font-extrabold uppercase tracking-[0.12em] text-[#43634E]">Легко почати</p>
+        <h2 id="steps-title" class="font-['Raleway',sans-serif] text-[clamp(1.8rem,3.2vw,2.8rem)] font-semibold leading-[1.2] tracking-[-0.045em]">Від заявки до гір за 3 кроки</h2>
+      </div>
+      <ol class="grid grid-cols-1 gap-12 sm:grid-cols-3 sm:gap-5">
+        <li class="relative border-l border-[#D4D9D1] pl-6 sm:border-l-0 sm:pl-0">
+          <span class="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-[#43634E] font-['Raleway',sans-serif] text-[1.25rem] font-bold text-white">01</span>
+          <h3 class="font-['Raleway',sans-serif] text-[1.25rem] font-semibold leading-[1.2]">Залишаєте заявку</h3>
+          <p class="mt-2 leading-[1.65] text-[#606A63]">Розкажіть, куди мрієте вирушити, коли та з ким.</p>
+        </li>
+        <li class="relative border-l border-[#D4D9D1] pl-6 sm:border-l-0 sm:pl-0">
+          <span class="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-[#43634E] font-['Raleway',sans-serif] text-[1.25rem] font-bold text-white">02</span>
+          <h3 class="font-['Raleway',sans-serif] text-[1.25rem] font-semibold leading-[1.2]">Отримуєте план</h3>
+          <p class="mt-2 leading-[1.65] text-[#606A63]">Ми підбираємо маршрут і надсилаємо зрозумілий розрахунок.</p>
+        </li>
+        <li class="relative border-l border-[#D4D9D1] pl-6 sm:border-l-0 sm:pl-0">
+          <span class="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-[#43634E] font-['Raleway',sans-serif] text-[1.25rem] font-bold text-white">03</span>
+          <h3 class="font-['Raleway',sans-serif] text-[1.25rem] font-semibold leading-[1.2]">Вирушаєте в подорож</h3>
+          <p class="mt-2 leading-[1.65] text-[#606A63]">Збираєте рюкзак — про решту подбаємо ми та ваш гід.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="services" aria-labelledby="services-title" class="scroll-mt-24 border-y border-[#D4D9D1] bg-white/60">
+      <div class="mx-auto max-w-[70rem] px-4 py-16 sm:px-8 sm:py-14 lg:px-12 lg:py-[5.5rem]">
+        <div class="mb-[2.375rem] flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p class="mb-3 text-[0.78rem] font-extrabold uppercase tracking-[0.12em] text-[#43634E]">Послуги</p>
+            <h2 id="services-title" class="font-['Raleway',sans-serif] text-[clamp(1.8rem,3.2vw,2.8rem)] font-semibold leading-[1.2] tracking-[-0.045em]">Підбір спорядження</h2>
+          </div>
+          <p class="max-w-md leading-[1.65] text-[#606A63]">Обирайте спорядження для безпечної та комфортної подорожі Карпатами.</p>
+        </div>
+        <ul class="grid grid-cols-1 gap-5 md:grid-cols-3">
+          <li class="flex">
+            <article aria-labelledby="gear-card-1" class="flex w-full flex-col overflow-hidden rounded-lg border border-[#D4D9D1] bg-white shadow-[0_0.25rem_1rem_rgb(32_42_36_/_6%)] transition duration-[240ms] ease-[ease] hover:-translate-y-[2px] hover:shadow-[0_0.5rem_1.5rem_rgb(32_42_36_/_12%)]">
+              <img src="assets/images/hero-image.jpg" alt="Мандрівник із рюкзаком у Карпатах" width="640" height="480" loading="lazy" class="aspect-[16/10] w-full object-cover">
+              <div class="flex flex-1 flex-col p-[1.625rem]">
+                <div>
+                  <p class="mb-3 text-[0.78rem] font-extrabold uppercase tracking-[0.12em] text-[#43634E]">Підбір спорядження</p>
+                  <h3 id="gear-card-1" class="font-['Raleway',sans-serif] text-[1.25rem] font-semibold leading-[1.2]">Спорядження під ваш маршрут</h3>
+                  <p class="mt-2 leading-[1.65] text-[#606A63]">Допоможемо зібрати рюкзак для походу Карпатами з урахуванням сезону, погоди й складності маршруту.</p>
+                </div>
+                <dl class="grid grid-cols-3 gap-[0.625rem] rounded-[0.625rem] bg-[#EEEAE0] p-4 text-[0.9rem]">
+                  <div><dt class="text-[0.78rem] font-medium uppercase text-[#606A63]">Тривалість</dt><dd class="mt-[0.625rem] font-semibold">1–3 дні</dd></div>
+                  <div><dt class="text-[0.78rem] font-medium uppercase text-[#606A63]">Сезон</dt><dd class="mt-[0.625rem] font-semibold">Літо–осінь</dd></div>
+                  <div><dt class="text-[0.78rem] font-medium uppercase text-[#606A63]">Рівень</dt><dd class="mt-[0.625rem] font-semibold">Початковий</dd></div>
+                </dl>
+                <a href="#request" class="mt-auto inline-flex min-h-12 w-full items-center justify-center rounded border border-[#43634E] bg-[#43634E] px-3 font-bold text-white transition duration-[160ms] ease-[ease] hover:border-[#304A39] hover:bg-[#304A39] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#43634E]">Підібрати спорядження</a>
+              </div>
+            </article>
+          </li>
+          <li class="flex">
+            <article aria-labelledby="gear-card-2" class="flex w-full flex-col overflow-hidden rounded-lg border border-[#D4D9D1] bg-white shadow-[0_0.25rem_1rem_rgb(32_42_36_/_6%)] transition duration-[240ms] ease-[ease] hover:-translate-y-[2px] hover:shadow-[0_0.5rem_1.5rem_rgb(32_42_36_/_12%)]">
+              <img src="assets/images/hero-image.jpg" alt="Мандрівник із рюкзаком у Карпатах" width="640" height="480" loading="lazy" class="aspect-[16/10] w-full object-cover">
+              <div class="flex flex-1 flex-col p-[1.625rem]">
+                <div>
+                  <p class="mb-3 text-[0.78rem] font-extrabold uppercase tracking-[0.12em] text-[#43634E]">Одяг</p>
+                  <h3 id="gear-card-2" class="font-['Raleway',sans-serif] text-[1.25rem] font-semibold leading-[1.2]">Одяг для гір</h3>
+                  <p class="mt-2 leading-[1.65] text-[#606A63]">Підберемо багатошаровий комплект, який захистить від вітру, дощу та різких перепадів температури.</p>
+                </div>
+                <dl class="grid grid-cols-3 gap-[0.625rem] rounded-[0.625rem] bg-[#EEEAE0] p-4 text-[0.9rem]">
+                  <div><dt class="text-[0.78rem] font-medium uppercase text-[#606A63]">Тривалість</dt><dd class="mt-[0.625rem] font-semibold">1–5 днів</dd></div>
+                  <div><dt class="text-[0.78rem] font-medium uppercase text-[#606A63]">Сезон</dt><dd class="mt-[0.625rem] font-semibold">Весь рік</dd></div>
+                  <div><dt class="text-[0.78rem] font-medium uppercase text-[#606A63]">Рівень</dt><dd class="mt-[0.625rem] font-semibold">Будь-який</dd></div>
+                </dl>
+                <a href="#request" class="mt-auto inline-flex min-h-12 w-full items-center justify-center rounded border border-[#43634E] bg-[#43634E] px-3 font-bold text-white transition duration-[160ms] ease-[ease] hover:border-[#304A39] hover:bg-[#304A39] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#43634E]">Підібрати одяг</a>
+              </div>
+            </article>
+          </li>
+          <li class="flex">
+            <article aria-labelledby="gear-card-3" class="flex w-full flex-col overflow-hidden rounded-lg border border-[#D4D9D1] bg-white shadow-[0_0.25rem_1rem_rgb(32_42_36_/_6%)] transition duration-[240ms] ease-[ease] hover:-translate-y-[2px] hover:shadow-[0_0.5rem_1.5rem_rgb(32_42_36_/_12%)]">
+              <img src="assets/images/hero-image.jpg" alt="Мандрівник із рюкзаком у Карпатах" width="640" height="480" loading="lazy" class="aspect-[16/10] w-full object-cover">
+              <div class="flex flex-1 flex-col p-[1.625rem]">
+                <div>
+                  <p class="mb-3 text-[0.78rem] font-extrabold uppercase tracking-[0.12em] text-[#43634E]">Взуття</p>
+                  <h3 id="gear-card-3" class="font-['Raleway',sans-serif] text-[1.25rem] font-semibold leading-[1.2]">Трекінгове взуття</h3>
+                  <p class="mt-2 leading-[1.65] text-[#606A63]">Порадимо, як обрати черевики за розміром, підошвою та типом стежок, щоб ноги не втомлювалися.</p>
+                </div>
+                <dl class="grid grid-cols-3 gap-[0.625rem] rounded-[0.625rem] bg-[#EEEAE0] p-4 text-[0.9rem]">
+                  <div><dt class="text-[0.78rem] font-medium uppercase text-[#606A63]">Тривалість</dt><dd class="mt-[0.625rem] font-semibold">1–7 днів</dd></div>
+                  <div><dt class="text-[0.78rem] font-medium uppercase text-[#606A63]">Сезон</dt><dd class="mt-[0.625rem] font-semibold">Літо–осінь</dd></div>
+                  <div><dt class="text-[0.78rem] font-medium uppercase text-[#606A63]">Рівень</dt><dd class="mt-[0.625rem] font-semibold">Будь-який</dd></div>
+                </dl>
+                <a href="#request" class="mt-auto inline-flex min-h-12 w-full items-center justify-center rounded border border-[#43634E] bg-[#43634E] px-3 font-bold text-white transition duration-[160ms] ease-[ease] hover:border-[#304A39] hover:bg-[#304A39] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#43634E]">Підібрати взуття</a>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="map-section" aria-labelledby="map-title">
+      <div class="map-container">
+        <h2 id="map-title">Знайдіть свої Карпати</h2>
+        <figure class="map-frame">
+          <iframe
+            src="https://www.google.com/maps?q=Carpathian+Mountains,+Ukraine&output=embed"
+            title="Інтерактивна карта Карпат, Україна"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+          ></iframe>
+        </figure>
+      </div>
+    </section>
+
+    <section id="reviews" aria-labelledby="reviews-title" class="scroll-mt-24 mx-auto max-w-[70rem] px-4 py-16 sm:px-8 sm:py-14 lg:px-12 lg:py-[5.5rem]">
+      <div class="mx-auto mb-[2.375rem] max-w-2xl text-center">
+        <p class="mb-3 text-[0.78rem] font-extrabold uppercase tracking-[0.12em] text-[#43634E]">Відгуки</p>
+        <h2 id="reviews-title" class="font-['Raleway',sans-serif] text-[clamp(1.8rem,3.2vw,2.8rem)] font-semibold leading-[1.2] tracking-[-0.045em]">Відгуки мандрівників</h2>
+        <p class="mt-4 leading-[1.65] text-[#606A63]">Історії людей, які вже відкрили для себе Карпати.</p>
+      </div>
+      <ul class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <li class="rounded-lg border border-[#D4D9D1] bg-white p-[1.625rem] shadow-[0_0.25rem_1rem_rgb(32_42_36_/_6%)] transition duration-[240ms] ease-[ease] hover:-translate-y-[2px] hover:shadow-[0_0.5rem_1.5rem_rgb(32_42_36_/_12%)]">
+          <figure class="flex h-full flex-col">
+            <figcaption class="mb-4 font-semibold">Олена <span class="font-normal text-[#606A63]">· Львів</span></figcaption>
+            <blockquote class="flex-1 font-['Raleway',sans-serif] text-[1.05rem] font-medium leading-[1.65]">«Маршрут був добре продуманий, а краєвиди — неймовірні. Почувалися спокійно протягом усієї мандрівки».</blockquote>
+            <a href="#request" class="mt-6 inline-flex min-h-11 items-center font-semibold text-[#43634E] underline decoration-[#D4D9D1] underline-offset-4 transition duration-[160ms] ease-[ease] hover:text-[#304A39] focus-visible:rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#43634E]">Обговорити подорож <span aria-hidden="true" class="ml-2">→</span></a>
+          </figure>
+        </li>
+        <li class="rounded-lg border border-[#D4D9D1] bg-white p-[1.625rem] shadow-[0_0.25rem_1rem_rgb(32_42_36_/_6%)] transition duration-[240ms] ease-[ease] hover:-translate-y-[2px] hover:shadow-[0_0.5rem_1.5rem_rgb(32_42_36_/_12%)]">
+          <figure class="flex h-full flex-col">
+            <figcaption class="mb-4 font-semibold">Андрій <span class="font-normal text-[#606A63]">· Київ</span></figcaption>
+            <blockquote class="flex-1 font-['Raleway',sans-serif] text-[1.05rem] font-medium leading-[1.65]">«Ми побачили гори з нового боку й познайомилися з гостинними місцевими людьми».</blockquote>
+            <a href="#request" class="mt-6 inline-flex min-h-11 items-center font-semibold text-[#43634E] underline decoration-[#D4D9D1] underline-offset-4 transition duration-[160ms] ease-[ease] hover:text-[#304A39] focus-visible:rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#43634E]">Обговорити подорож <span aria-hidden="true" class="ml-2">→</span></a>
+          </figure>
+        </li>
+        <li class="rounded-lg border border-[#D4D9D1] bg-white p-[1.625rem] shadow-[0_0.25rem_1rem_rgb(32_42_36_/_6%)] transition duration-[240ms] ease-[ease] hover:-translate-y-[2px] hover:shadow-[0_0.5rem_1.5rem_rgb(32_42_36_/_12%)]">
+          <figure class="flex h-full flex-col">
+            <figcaption class="mb-4 font-semibold">Марія <span class="font-normal text-[#606A63]">· Одеса</span></figcaption>
+            <blockquote class="flex-1 font-['Raleway',sans-serif] text-[1.05rem] font-medium leading-[1.65]">«Було легко спланувати поїздку та зрозуміти, що саме потрібно взяти із собою».</blockquote>
+            <a href="#request" class="mt-6 inline-flex min-h-11 items-center font-semibold text-[#43634E] underline decoration-[#D4D9D1] underline-offset-4 transition duration-[160ms] ease-[ease] hover:text-[#304A39] focus-visible:rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#43634E]">Обговорити подорож <span aria-hidden="true" class="ml-2">→</span></a>
+          </figure>
+        </li>
+        <li class="rounded-lg border border-[#D4D9D1] bg-white p-[1.625rem] shadow-[0_0.25rem_1rem_rgb(32_42_36_/_6%)] transition duration-[240ms] ease-[ease] hover:-translate-y-[2px] hover:shadow-[0_0.5rem_1.5rem_rgb(32_42_36_/_12%)]">
+          <figure class="flex h-full flex-col">
+            <figcaption class="mb-4 font-semibold">Ірина <span class="font-normal text-[#606A63]">· Дніпро</span></figcaption>
+            <blockquote class="flex-1 font-['Raleway',sans-serif] text-[1.05rem] font-medium leading-[1.65]">«Гід уважно врахував наш темп і допоміг відчути себе впевнено на маршруті».</blockquote>
+            <a href="#request" class="mt-6 inline-flex min-h-11 items-center font-semibold text-[#43634E] underline decoration-[#D4D9D1] underline-offset-4 transition duration-[160ms] ease-[ease] hover:text-[#304A39] focus-visible:rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#43634E]">Обговорити подорож <span aria-hidden="true" class="ml-2">→</span></a>
+          </figure>
+        </li>
+        <li class="rounded-lg border border-[#D4D9D1] bg-white p-[1.625rem] shadow-[0_0.25rem_1rem_rgb(32_42_36_/_6%)] transition duration-[240ms] ease-[ease] hover:-translate-y-[2px] hover:shadow-[0_0.5rem_1.5rem_rgb(32_42_36_/_12%)]">
+          <figure class="flex h-full flex-col">
+            <figcaption class="mb-4 font-semibold">Тарас <span class="font-normal text-[#606A63]">· Тернопіль</span></figcaption>
+            <blockquote class="flex-1 font-['Raleway',sans-serif] text-[1.05rem] font-medium leading-[1.65]">«Сподобалося, що маршрут і витрати були зрозумілі ще до початку подорожі».</blockquote>
+            <a href="#request" class="mt-6 inline-flex min-h-11 items-center font-semibold text-[#43634E] underline decoration-[#D4D9D1] underline-offset-4 transition duration-[160ms] ease-[ease] hover:text-[#304A39] focus-visible:rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#43634E]">Обговорити подорож <span aria-hidden="true" class="ml-2">→</span></a>
+          </figure>
+        </li>
+        <li class="rounded-lg border border-[#D4D9D1] bg-white p-[1.625rem] shadow-[0_0.25rem_1rem_rgb(32_42_36_/_6%)] transition duration-[240ms] ease-[ease] hover:-translate-y-[2px] hover:shadow-[0_0.5rem_1.5rem_rgb(32_42_36_/_12%)]">
+          <figure class="flex h-full flex-col">
+            <figcaption class="mb-4 font-semibold">Наталія <span class="font-normal text-[#606A63]">· Харків</span></figcaption>
+            <blockquote class="flex-1 font-['Raleway',sans-serif] text-[1.05rem] font-medium leading-[1.65]">«Це була чудова сімейна пригода — ми побачили гори й відпочили на природі».</blockquote>
+            <a href="#request" class="mt-6 inline-flex min-h-11 items-center font-semibold text-[#43634E] underline decoration-[#D4D9D1] underline-offset-4 transition duration-[160ms] ease-[ease] hover:text-[#304A39] focus-visible:rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#43634E]">Обговорити подорож <span aria-hidden="true" class="ml-2">→</span></a>
+          </figure>
+        </li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="about-title" class="border-y border-[#D4D9D1] bg-[#EEEAE0]">
+      <div class="mx-auto grid max-w-[70rem] grid-cols-1 items-center gap-12 px-4 py-16 sm:px-8 sm:py-14 lg:grid-cols-2 lg:gap-16 lg:px-12 lg:py-[5.5rem]">
+        <img src="assets/images/aboutus_picture.png" alt="Команда «До Вершин» серед карпатських гір" width="600" height="800" loading="lazy" class="aspect-[4/3] w-full rounded-xl object-cover shadow-[0_0.25rem_1rem_rgb(32_42_36_/_6%)]">
+        <div>
+          <p class="mb-3 text-[0.78rem] font-extrabold uppercase tracking-[0.12em] text-[#43634E]">Про нас</p>
+          <h2 id="about-title" class="font-['Raleway',sans-serif] text-[clamp(1.8rem,3.2vw,2.8rem)] font-semibold leading-[1.2] tracking-[-0.045em]">Ми будуємо міст між мандрівником і горами</h2>
+          <p class="mt-5 leading-[1.65] text-[#606A63]">«До Вершин» допомагає спланувати подорож так, щоб знайомство з горами було безпечним і дбайливим.</p>
+          <div class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2">
+            <section aria-labelledby="mission-title">
+              <img src="assets/icons/holiday_village.png" alt="" aria-hidden="true" loading="lazy" class="mb-4 h-10 w-auto object-contain">
+              <h3 id="mission-title" class="font-['Raleway',sans-serif] text-[1.25rem] font-semibold leading-[1.2]">Наша місія</h3>
+              <p class="mt-2 text-[0.9rem] leading-[1.65] text-[#606A63]">Розвивати відповідальний еко-туризм, який підтримує природу та місцевих мешканців.</p>
+            </section>
+            <section aria-labelledby="approach-title">
+              <img src="assets/icons/route.png" alt="" aria-hidden="true" loading="lazy" class="mb-4 h-10 w-auto object-contain">
+              <h3 id="approach-title" class="font-['Raleway',sans-serif] text-[1.25rem] font-semibold leading-[1.2]">Наш підхід</h3>
+              <p class="mt-2 text-[0.9rem] leading-[1.65] text-[#606A63]">Ми працюємо напряму з громадами, без посередників, і перевіряємо кожен маршрут особисто.</p>
+            </section>
+          </div>
+          <a href="#contacts" class="mt-6 inline-flex min-h-11 items-center font-semibold text-[#43634E] underline decoration-[#D4D9D1] underline-offset-4 transition duration-[160ms] ease-[ease] hover:text-[#304A39]">Більше про нас <span aria-hidden="true" class="ml-2">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="faq-title" class="mx-auto max-w-4xl px-4 py-16 sm:px-8 sm:py-14 lg:py-[5.5rem]">
+      <div class="mb-[2.375rem] text-center">
+        <p class="mb-3 text-[0.78rem] font-extrabold uppercase tracking-[0.12em] text-[#43634E]">Все, що варто знати</p>
+        <h2 id="faq-title" class="font-['Raleway',sans-serif] text-[clamp(1.8rem,3.2vw,2.8rem)] font-semibold leading-[1.2] tracking-[-0.045em]">Часті запитання</h2>
+      </div>
+      <div class="space-y-[0.625rem]">
+        <details class="group rounded-[0.625rem] border border-[#D4D9D1] bg-white px-[1.375rem] open:shadow-[0_0.25rem_1rem_rgb(32_42_36_/_6%)] sm:px-6">
+          <summary class="flex min-h-12 cursor-pointer list-none items-center justify-between gap-[0.625rem] font-semibold marker:content-none focus-visible:rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#43634E]">Скільки коштує подорож?<span aria-hidden="true" class="text-[1.25rem] text-[#43634E] transition group-open:rotate-45">+</span></summary>
+          <p class="pb-5 leading-[1.65] text-[#606A63]">Вартість залежить від маршруту, тривалості та розміру групи. Перед бронюванням ви отримаєте повний розрахунок із переліком того, що входить у ціну.</p>
+        </details>
+        <details class="group rounded-[0.625rem] border border-[#D4D9D1] bg-white px-[1.375rem] open:shadow-[0_0.25rem_1rem_rgb(32_42_36_/_6%)] sm:px-6">
+          <summary class="flex min-h-12 cursor-pointer list-none items-center justify-between gap-[0.625rem] font-semibold marker:content-none focus-visible:rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#43634E]">Чи безпечно йти в гори з гідом?<span aria-hidden="true" class="text-[1.25rem] text-[#43634E] transition group-open:rotate-45">+</span></summary>
+          <p class="pb-5 leading-[1.65] text-[#606A63]">Гід оцінює погоду, стан групи та ситуацію на маршруті. Кожен план має запасні варіанти, а для віддалених маршрутів передбачені GPS-треки та супутниковий зв'язок.</p>
+        </details>
+        <details class="group rounded-[0.625rem] border border-[#D4D9D1] bg-white px-[1.375rem] open:shadow-[0_0.25rem_1rem_rgb(32_42_36_/_6%)] sm:px-6">
+          <summary class="flex min-h-12 cursor-pointer list-none items-center justify-between gap-[0.625rem] font-semibold marker:content-none focus-visible:rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#43634E]">Що потрібно взяти з собою?<span aria-hidden="true" class="text-[1.25rem] text-[#43634E] transition group-open:rotate-45">+</span></summary>
+          <p class="pb-5 leading-[1.65] text-[#606A63]">Після вибору маршруту надішлемо персональний список спорядження. За потреби підкажемо, що можна орендувати або замінити.</p>
+        </details>
+        <details class="group rounded-[0.625rem] border border-[#D4D9D1] bg-white px-[1.375rem] open:shadow-[0_0.25rem_1rem_rgb(32_42_36_/_6%)] sm:px-6">
+          <summary class="flex min-h-12 cursor-pointer list-none items-center justify-between gap-[0.625rem] font-semibold marker:content-none focus-visible:rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#43634E]">Що буде, якщо доведеться скасувати поїздку?<span aria-hidden="true" class="text-[1.25rem] text-[#43634E] transition group-open:rotate-45">+</span></summary>
+          <p class="pb-5 leading-[1.65] text-[#606A63]">Умови перенесення або скасування повідомимо до підтвердження бронювання. Якщо плани зміняться, напишіть нам якомога раніше — разом знайдемо найкраще рішення.</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="request" aria-labelledby="request-title" class="scroll-mt-24 bg-[#43634E]">
+      <div class="mx-auto grid max-w-[70rem] grid-cols-1 gap-12 px-4 py-16 sm:px-8 sm:py-16 lg:grid-cols-2 lg:items-center lg:gap-16 lg:px-12 lg:py-[5.5rem]">
+        <div class="text-white">
+          <p class="mb-3 text-[0.78rem] font-extrabold uppercase tracking-[0.12em] text-[#D8DED5]">Ваша пригода починається тут</p>
+          <h2 id="request-title" class="font-['Raleway',sans-serif] text-[clamp(1.8rem,3.2vw,2.8rem)] font-semibold leading-[1.2] tracking-[-0.045em]">Готові побачити справжні гори?</h2>
+          <p class="mt-5 max-w-lg leading-[1.65] text-white">Залиште контакти — ми уточнимо деталі, підберемо напрямок і підготуємо розрахунок саме для вас.</p>
+          <p class="mt-8 flex items-center gap-3 text-[0.9rem] text-white/85"><span aria-hidden="true" class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10">↗</span>Відповімо протягом одного робочого дня</p>
+        </div>
+        <form action="mailto:hello@do-vershyn.com.ua" method="post" enctype="text/plain" class="rounded-lg bg-[#F7F5EF] p-[1.625rem] shadow-[0_0.5rem_1.5rem_rgb(32_42_36_/_12%)]">
+          <div class="grid grid-cols-1 gap-5 sm:grid-cols-2">
+            <div>
+              <label for="name" class="mb-2 block text-[0.9rem] font-semibold">Ім'я</label>
+              <input id="name" name="name" type="text" autocomplete="name" required placeholder="Як до вас звертатися?" class="min-h-12 w-full rounded border border-[#D4D9D1] bg-white px-[1.375rem] text-[#202A24] placeholder:text-[#606A63] focus:border-[#43634E] focus:outline-none focus:ring-2 focus:ring-[#43634E]/20">
+            </div>
+            <div>
+              <label for="phone" class="mb-2 block text-[0.9rem] font-semibold">Телефон</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="+380" class="min-h-12 w-full rounded border border-[#D4D9D1] bg-white px-[1.375rem] text-[#202A24] placeholder:text-[#606A63] focus:border-[#43634E] focus:outline-none focus:ring-2 focus:ring-[#43634E]/20">
+            </div>
+            <div class="sm:col-span-2">
+              <label for="email" class="mb-2 block text-[0.9rem] font-semibold">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required placeholder="name@example.com" class="min-h-12 w-full rounded border border-[#D4D9D1] bg-white px-[1.375rem] text-[#202A24] placeholder:text-[#606A63] focus:border-[#43634E] focus:outline-none focus:ring-2 focus:ring-[#43634E]/20">
+            </div>
+            <div>
+              <label for="destination" class="mb-2 block text-[0.9rem] font-semibold">Напрямок</label>
+              <select id="destination" name="destination" class="min-h-12 w-full rounded border border-[#D4D9D1] bg-white px-[1.375rem] text-[#202A24] focus:border-[#43634E] focus:outline-none focus:ring-2 focus:ring-[#43634E]/20">
+                <option value="">Ще не визначився / -лася</option>
+                <option>Свидовець</option>
+                <option>Чорногора</option>
+                <option>Ґорґани</option>
+                <option>Бескиди</option>
+                <option>Інший напрямок</option>
+              </select>
+            </div>
+            <div>
+              <label for="people" class="mb-2 block text-[0.9rem] font-semibold">Кількість людей</label>
+              <select id="people" name="people" class="min-h-12 w-full rounded border border-[#D4D9D1] bg-white px-[1.375rem] text-[#202A24] focus:border-[#43634E] focus:outline-none focus:ring-2 focus:ring-[#43634E]/20">
+                <option>1 людина</option>
+                <option selected>2 людини</option>
+                <option>3–5 людей</option>
+                <option>6 і більше</option>
+              </select>
+            </div>
+            <div class="sm:col-span-2">
+              <label for="dates" class="mb-2 block text-[0.9rem] font-semibold">Бажані дати</label>
+              <input id="dates" name="dates" type="text" placeholder="Наприклад, друга половина червня" class="min-h-12 w-full rounded border border-[#D4D9D1] bg-white px-[1.375rem] text-[#202A24] placeholder:text-[#606A63] focus:border-[#43634E] focus:outline-none focus:ring-2 focus:ring-[#43634E]/20">
+            </div>
+          </div>
+          <button type="submit" class="mt-5 inline-flex min-h-12 w-full items-center justify-center rounded border border-[#43634E] bg-[#43634E] px-[1.375rem] font-bold text-white transition duration-[160ms] ease-[ease] hover:border-[#304A39] hover:bg-[#304A39] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#43634E]">Розрахувати тур <span aria-hidden="true" class="ml-2">↗</span></button>
+          <p class="mt-4 text-center text-[0.78rem] leading-[1.65] text-[#606A63]">Надсилаючи форму, ви погоджуєтеся з нашою <a href="#privacy" class="font-medium text-[#43634E] underline underline-offset-2 hover:text-[#304A39]">політикою конфіденційності</a>.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contacts" class="scroll-mt-24 bg-[#202A24] text-white">
+    <div class="mx-auto max-w-[70rem] px-4 py-12 sm:px-8 lg:px-12">
+      <div class="grid grid-cols-1 gap-12 border-b border-white/15 pb-9 sm:grid-cols-2 lg:grid-cols-3">
+        <div>
+          <a href="#top" class="inline-flex rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white" aria-label="До Вершин — на початок сторінки">
+            <img src="assets/images/logo.svg" alt="До Вершин" width="160" height="48" loading="lazy" class="h-16 w-auto rounded bg-white p-1.5">
+          </a>
+          <p class="mt-4 max-w-xs text-[0.9rem] leading-[1.65] text-[#D8DED5]">Подорожуй глибше. Залишай менше сліду.</p>
+        </div>
+        <address class="not-italic">
+          <h2 class="mb-3 text-[0.78rem] font-semibold uppercase tracking-[0.12em] text-[#D8DED5]">Зв'яжіться з нами</h2>
+          <ul class="space-y-[0.625rem] text-[0.9rem] text-[#D8DED5]">
+            <li><a href="tel:+380671234567" class="rounded transition duration-[160ms] ease-[ease] hover:text-white hover:underline hover:underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">+38 (067) 123-45-67</a></li>
+            <li><a href="mailto:hello@do-vershyn.com.ua" class="rounded transition duration-[160ms] ease-[ease] hover:text-white hover:underline hover:underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">hello@do-vershyn.com.ua</a></li>
+            <li class="flex gap-3 pt-1"><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="rounded underline decoration-white/30 underline-offset-4 transition duration-[160ms] ease-[ease] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Instagram</a><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="rounded underline decoration-white/30 underline-offset-4 transition duration-[160ms] ease-[ease] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Facebook</a></li>
+          </ul>
+        </address>
+        <div id="privacy">
+          <h2 class="mb-3 text-[0.78rem] font-semibold uppercase tracking-[0.12em] text-[#D8DED5]">Корисне</h2>
+          <a href="mailto:hello@do-vershyn.com.ua?subject=Політика%20конфіденційності" class="rounded text-[0.9rem] text-[#D8DED5] underline decoration-white/30 underline-offset-4 transition duration-[160ms] ease-[ease] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Політика конфіденційності</a>
+          <p class="mt-3 text-[0.78rem] leading-[1.65] text-[#D8DED5]">Деталі обробки персональних даних надамо за запитом.</p>
+        </div>
+      </div>
+      <p class="pt-6 text-[0.9rem] text-[#D8DED5]"><small>© 2026 «До Вершин». Подорожуй відповідально.</small></p>
+    </div>
+  </footer>
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuOpenIcon = document.getElementById('menu-open-icon');
+    const menuCloseIcon = document.getElementById('menu-close-icon');
+
+    function setMenuOpen(isOpen) {
+      menuToggle.setAttribute('aria-expanded', String(isOpen));
+      menuToggle.setAttribute('aria-label', isOpen ? 'Закрити меню' : 'Відкрити меню');
+      mobileMenu.classList.toggle('hidden', !isOpen);
+      menuOpenIcon.classList.toggle('hidden', isOpen);
+      menuCloseIcon.classList.toggle('hidden', !isOpen);
+    }
+
+    menuToggle.addEventListener('click', () => {
+      setMenuOpen(menuToggle.getAttribute('aria-expanded') !== 'true');
+    });
+
+    mobileMenu.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => setMenuOpen(false));
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && menuToggle.getAttribute('aria-expanded') === 'true') {
+        setMenuOpen(false);
+        menuToggle.focus();
+      }
+    });
+  </script>
+</body>
+</html>
