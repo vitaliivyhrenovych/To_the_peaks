@@ -76,8 +76,8 @@
           <li><strong class="block font-['Raleway',sans-serif] text-[1.25rem] font-bold">4.9/5</strong><span class="text-[0.78rem] leading-[1.65] text-[#606A63]">оцінка гостей</span></li>
         </ul>
       </div>
-      <div class="lg:justify-self-end">
-        <video autoplay muted loop playsinline aria-hidden="true" poster="assets/images/hero-image.jpg" class="aspect-[4/3] w-full rounded-xl object-cover shadow-[0_0.25rem_1rem_rgb(32_42_36_/_6%)] sm:aspect-[5/4] lg:max-w-xl">
+      <div class="hero-media">
+        <video autoplay muted loop playsinline aria-hidden="true" poster="assets/images/hero-image.jpg" class="aspect-[4/3] w-full rounded-xl object-cover shadow-[0_0.25rem_1rem_rgb(32_42_36_/_6%)] sm:aspect-[5/4]">
           <source src="assets/video/hero_video.mp4" type="video/mp4">
         </video>
       </div>
@@ -86,16 +86,22 @@
     <section class="video-section" aria-labelledby="video-title">
       <div class="video-container">
         <h2 id="video-title">Відчуйте Карпати до мандрівки</h2>
-        <figure class="video-frame">
-          <iframe
-            src="https://www.youtube-nocookie.com/embed/i_floFq4Ekk?rel=0"
-            title="Відео про Карпати від «До Вершин»"
-            loading="lazy"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-        </figure>
+        <div class="video-layout">
+          <figure class="video-frame">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/i_floFq4Ekk?rel=0"
+              title="Відео про Карпати від «До Вершин»"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </figure>
+          <aside class="hero-weather-card" aria-label="Поточна погода в Карпатах">
+            <a class="weatherwidget-io" href="https://forecast7.com/en/48d0524d21/rakhiv/" data-label_1="РАХІВ" data-label_2="ПОГОДА" data-theme="pure" data-language="uk" data-unit="c">Погода в Рахові</a>
+            <script async src="https://weatherwidget.io/js/widget.min.js" id="weatherwidget-io-js"></script>
+          </aside>
+        </div>
       </div>
     </section>
 
