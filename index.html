@@ -348,23 +348,23 @@
           <p class="mt-5 max-w-lg leading-[1.65] text-white">Залиште контакти — ми уточнимо деталі, підберемо напрямок і підготуємо розрахунок саме для вас.</p>
           <p class="mt-8 flex items-center gap-3 text-[0.9rem] text-white/85"><span aria-hidden="true" class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10">↗</span>Відповімо протягом одного робочого дня</p>
         </div>
-        <form action="mailto:hello@do-vershyn.com.ua" method="post" enctype="text/plain" class="rounded-lg bg-[#F7F5EF] p-[1.625rem] shadow-[0_0.5rem_1.5rem_rgb(32_42_36_/_12%)]">
+        <form id="feedbackForm" action="mailto:hello@do-vershyn.com.ua" method="post" enctype="text/plain" class="rounded-lg bg-[#F7F5EF] p-[1.625rem] shadow-[0_0.5rem_1.5rem_rgb(32_42_36_/_12%)]">
           <div class="grid grid-cols-1 gap-5 sm:grid-cols-2">
             <div>
-              <label for="name" class="mb-2 block text-[0.9rem] font-semibold">Ім'я</label>
-              <input id="name" name="name" type="text" autocomplete="name" required placeholder="Як до вас звертатися?" class="min-h-12 w-full rounded border border-[#D4D9D1] bg-white px-[1.375rem] text-[#202A24] placeholder:text-[#606A63] focus:border-[#43634E] focus:outline-none focus:ring-2 focus:ring-[#43634E]/20">
+              <label for="username" class="mb-2 block text-[0.9rem] font-semibold">Ім'я</label>
+              <input id="username" name="name" type="text" autocomplete="name" minlength="2" maxlength="80" required placeholder="Як до вас звертатися?" class="min-h-12 w-full rounded border border-[#D4D9D1] bg-white px-[1.375rem] text-[#202A24] placeholder:text-[#606A63] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#43634E]">
             </div>
             <div>
               <label for="phone" class="mb-2 block text-[0.9rem] font-semibold">Телефон</label>
-              <input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="+380" class="min-h-12 w-full rounded border border-[#D4D9D1] bg-white px-[1.375rem] text-[#202A24] placeholder:text-[#606A63] focus:border-[#43634E] focus:outline-none focus:ring-2 focus:ring-[#43634E]/20">
+              <input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="+380" class="min-h-12 w-full rounded border border-[#D4D9D1] bg-white px-[1.375rem] text-[#202A24] placeholder:text-[#606A63] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#43634E]">
             </div>
             <div class="sm:col-span-2">
               <label for="email" class="mb-2 block text-[0.9rem] font-semibold">Email</label>
-              <input id="email" name="email" type="email" autocomplete="email" required placeholder="name@example.com" class="min-h-12 w-full rounded border border-[#D4D9D1] bg-white px-[1.375rem] text-[#202A24] placeholder:text-[#606A63] focus:border-[#43634E] focus:outline-none focus:ring-2 focus:ring-[#43634E]/20">
+              <input id="email" name="email" type="email" autocomplete="email" required placeholder="name@example.com" class="min-h-12 w-full rounded border border-[#D4D9D1] bg-white px-[1.375rem] text-[#202A24] placeholder:text-[#606A63] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#43634E]">
             </div>
             <div>
               <label for="destination" class="mb-2 block text-[0.9rem] font-semibold">Напрямок</label>
-              <select id="destination" name="destination" class="min-h-12 w-full rounded border border-[#D4D9D1] bg-white px-[1.375rem] text-[#202A24] focus:border-[#43634E] focus:outline-none focus:ring-2 focus:ring-[#43634E]/20">
+              <select id="destination" name="destination" class="min-h-12 w-full rounded border border-[#D4D9D1] bg-white px-[1.375rem] text-[#202A24] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#43634E]">
                 <option value="">Ще не визначився / -лася</option>
                 <option>Свидовець</option>
                 <option>Чорногора</option>
@@ -375,7 +375,7 @@
             </div>
             <div>
               <label for="people" class="mb-2 block text-[0.9rem] font-semibold">Кількість людей</label>
-              <select id="people" name="people" class="min-h-12 w-full rounded border border-[#D4D9D1] bg-white px-[1.375rem] text-[#202A24] focus:border-[#43634E] focus:outline-none focus:ring-2 focus:ring-[#43634E]/20">
+              <select id="people" name="people" class="min-h-12 w-full rounded border border-[#D4D9D1] bg-white px-[1.375rem] text-[#202A24] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#43634E]">
                 <option>1 людина</option>
                 <option selected>2 людини</option>
                 <option>3–5 людей</option>
@@ -384,11 +384,23 @@
             </div>
             <div class="sm:col-span-2">
               <label for="dates" class="mb-2 block text-[0.9rem] font-semibold">Бажані дати</label>
-              <input id="dates" name="dates" type="text" placeholder="Наприклад, друга половина червня" class="min-h-12 w-full rounded border border-[#D4D9D1] bg-white px-[1.375rem] text-[#202A24] placeholder:text-[#606A63] focus:border-[#43634E] focus:outline-none focus:ring-2 focus:ring-[#43634E]/20">
+              <input id="dates" name="dates" type="text" placeholder="Наприклад, друга половина червня" class="min-h-12 w-full rounded border border-[#D4D9D1] bg-white px-[1.375rem] text-[#202A24] placeholder:text-[#606A63] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#43634E]">
+            </div>
+            <div class="sm:col-span-2">
+              <label for="message" class="mb-2 block text-[0.9rem] font-semibold">Повідомлення</label>
+              <textarea id="message" name="message" rows="4" minlength="10" maxlength="2000" required class="w-full rounded border border-[#D4D9D1] bg-white px-[1.375rem] py-3 text-[#202A24] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#43634E]"></textarea>
+            </div>
+            <div class="sm:col-span-2">
+              <div class="flex items-start gap-3">
+                <input id="agreement" name="agreement" type="checkbox" required class="mt-1 size-5 shrink-0 accent-[#43634E] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#43634E]">
+                <p class="min-h-11">
+                  <label for="agreement" class="cursor-pointer">Погоджуюся з політикою конфіденційності.</label>
+                  <a href="#privacy" class="ml-1 rounded font-medium text-[#43634E] underline underline-offset-2 hover:text-[#304A39] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#43634E]">Переглянути політику</a>
+                </p>
+              </div>
             </div>
           </div>
           <button type="submit" class="mt-5 inline-flex min-h-12 w-full items-center justify-center rounded border border-[#43634E] bg-[#43634E] px-[1.375rem] font-bold text-white transition duration-[160ms] ease-[ease] hover:border-[#304A39] hover:bg-[#304A39] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#43634E]">Розрахувати тур <span aria-hidden="true" class="ml-2">↗</span></button>
-          <p class="mt-4 text-center text-[0.78rem] leading-[1.65] text-[#606A63]">Надсилаючи форму, ви погоджуєтеся з нашою <a href="#privacy" class="font-medium text-[#43634E] underline underline-offset-2 hover:text-[#304A39]">політикою конфіденційності</a>.</p>
         </form>
       </div>
     </section>
@@ -449,5 +461,6 @@
       }
     });
   </script>
+  <script src="assets/js/validation.js" defer></script>
 </body>
 </html>
